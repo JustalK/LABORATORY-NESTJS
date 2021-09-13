@@ -1,5 +1,6 @@
 import { Controller, Get, HttpException, HttpStatus } from '@nestjs/common'
 import { Experience4Service } from './experience4.service';
+import { ForbiddenException } from './Exceptions/custom.exception'
 
 @Controller('experience4')
 export class Experience4Controller {
@@ -14,5 +15,10 @@ export class Experience4Controller {
         test2: 'This is a test with an object'
       },
     }, HttpStatus.FORBIDDEN);
+  }
+
+  @Get('exception')
+  customError() {
+    throw new ForbiddenException();
   }
 }
