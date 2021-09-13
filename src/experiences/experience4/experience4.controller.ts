@@ -7,6 +7,12 @@ export class Experience4Controller {
 
   @Get()
   error() {
-    throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
+    throw new HttpException({
+      status: HttpStatus.FORBIDDEN,
+      error: {
+        test: 'This is a custom message',
+        test2: 'This is a test with an object'
+      },
+    }, HttpStatus.FORBIDDEN);
   }
 }
