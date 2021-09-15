@@ -5,6 +5,9 @@
 1. **Experience 1**: Simple Hello World component
 2. **Experience 2**: Playing with the decorator and dto
 3. **Experience 3**: Creating a middleware on a particular path
+4. **Experience 4**: Creating a custom exception
+5. **Experience 5**: Creating a validation decorator from a schema
+6. **Experience 6**: Creating a custom guards
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
