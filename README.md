@@ -8,6 +8,7 @@
 4. **Experience 4**: Creating a custom exception
 5. **Experience 5**: Creating a validation decorator from a schema
 6. **Experience 6**: Creating a custom guards
+7. **Experience 7**: Creating an interceptor RXJS
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
