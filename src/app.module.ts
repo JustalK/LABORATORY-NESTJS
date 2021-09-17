@@ -24,7 +24,8 @@ import { Experience3Middleware } from './experiences/experience3/experience3.mid
     Experience6Module,
     Experience7Module,
     Experience8Module,
-    MongooseModule.forRoot('mongodb://root:smood2mongo@localhost:27017/admin')],
+    MongooseModule.forRoot('mongodb://root:smood2mongo@localhost:27017/admin')
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
