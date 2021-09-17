@@ -13,6 +13,7 @@ import { Experience6Module } from './experiences/experience6/experience6.module'
 import { Experience7Module } from './experiences/experience7/experience7.module';
 import { Experience8Module } from './experiences/experience8/cat.module';
 import { Experience9Module } from './experiences/experience9/experience9.module';
+import { Experience10Module } from './experiences/experience10/experience10.module';
 
 import { Experience3Middleware } from './experiences/experience3/experience3.middleware'
 
@@ -27,6 +28,7 @@ import { Experience3Middleware } from './experiences/experience3/experience3.mid
     Experience7Module,
     Experience8Module,
     Experience9Module,
+    Experience10Module,
     ConfigModule.forRoot({
       envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true
