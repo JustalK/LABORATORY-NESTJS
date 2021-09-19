@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ScheduleModule } from '@nestjs/schedule';
 
 import { Experience1Module } from './experiences/experience1/experience1.module';
 import { Experience2Module } from './experiences/experience2/experience2.module';
@@ -17,6 +18,7 @@ import { Experience10Module } from './experiences/experience10/experience10.modu
 import { Experience11Module } from './experiences/experience11/experience11.module';
 import { Experience12Module } from './experiences/experience12/experience12.module';
 import { Experience13Module } from './experiences/experience13/experience13.module';
+import { Experience14Module } from './experiences/experience14/experience14.module';
 
 import { Experience3Middleware } from './experiences/experience3/experience3.middleware'
 
@@ -35,11 +37,13 @@ import { Experience3Middleware } from './experiences/experience3/experience3.mid
     Experience11Module,
     Experience12Module,
     Experience13Module,
+    Experience14Module,
     ConfigModule.forRoot({
       envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true
     }),
-    MongooseModule.forRoot('mongodb://root:smood2mongo@localhost:27017/admin')
+    MongooseModule.forRoot('mongodb://root:smood2mongo@localhost:27017/admin'),
+    ScheduleModule.forRoot()
   ],
   controllers: [AppController],
   providers: [AppService],
