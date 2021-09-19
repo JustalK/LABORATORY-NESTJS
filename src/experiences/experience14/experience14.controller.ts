@@ -5,8 +5,18 @@ import { Experience14Service } from './experience14.service'
 export class Experience14Controller {
   constructor(private readonly experience14Service: Experience14Service) {}
 
-  @Get()
-  cron() {
-    return this.experience14Service.cron();
+  @Get('stop')
+  stopCronDynamic() {
+    return this.experience14Service.stopCronDynamic();
+  }
+
+  @Get('start')
+  startCronDynamic() {
+    return this.experience14Service.startCronDynamic();
+  }
+
+  @Get('create')
+  createCronDynamic() {
+    return this.experience14Service.createCronDynamic();
   }
 }
