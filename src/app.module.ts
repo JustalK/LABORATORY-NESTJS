@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ScheduleModule } from '@nestjs/schedule';
+import { EventEmitterModule } from '@nestjs/event-emitter';
 
 import { Experience1Module } from './experiences/experience1/experience1.module';
 import { Experience2Module } from './experiences/experience2/experience2.module';
@@ -19,6 +20,7 @@ import { Experience11Module } from './experiences/experience11/experience11.modu
 import { Experience12Module } from './experiences/experience12/experience12.module';
 import { Experience13Module } from './experiences/experience13/experience13.module';
 import { Experience14Module } from './experiences/experience14/experience14.module';
+import { Experience15Module } from './experiences/experience15/experience15.module';
 
 import { Experience3Middleware } from './experiences/experience3/experience3.middleware'
 
@@ -38,12 +40,28 @@ import { Experience3Middleware } from './experiences/experience3/experience3.mid
     Experience12Module,
     Experience13Module,
     Experience14Module,
+    Experience15Module,
     ConfigModule.forRoot({
       envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true
     }),
     MongooseModule.forRoot('mongodb://root:smood2mongo@localhost:27017/admin'),
-    ScheduleModule.forRoot()
+    ScheduleModule.forRoot(),
+    EventEmitterModule.forRoot({  // set this to `true` to use wildcards
+      wildcard: false,
+      // the delimiter used to segment namespaces
+      delimiter: '.',
+      // set this to `true` if you want to emit the newListener event
+      newListener: false,
+      // set this to `true` if you want to emit the removeListener event
+      removeListener: false,
+      // the maximum amount of listeners that can be assigned to an event
+      maxListeners: 10,
+      // show event name in memory leak message when more than maximum amount of listeners is assigned
+      verboseMemoryLeak: false,
+      // disable throwing uncaughtException if an error event is emitted and it has no listeners
+      ignoreErrors: false,
+    })
   ],
   controllers: [AppController],
   providers: [AppService],
