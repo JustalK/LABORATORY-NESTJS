@@ -9,6 +9,7 @@
 5. **Experience 5**: Creating a validation decorator from a schema
 6. **Experience 6**: Creating a custom guards
 7. **Experience 7**: Creating an interceptor RXJS
+20. **Experience 20**: Load a module and service in a lazy way
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 

@@ -25,6 +25,7 @@ import { Experience16Module } from './experiences/experience16/experience16.modu
 import { Experience17Module } from './experiences/experience17/experience17.module';
 import { Experience18Module } from './experiences/experience18/experience18.module';
 import { Experience19Module } from './experiences/experience19/experience19.module';
+import Experience20Module from './experiences/experience20/experience.module';
 
 import { Experience3Middleware } from './experiences/experience3/experience3.middleware'
 
@@ -49,6 +50,7 @@ import { Experience3Middleware } from './experiences/experience3/experience3.mid
     Experience17Module,
     Experience18Module,
     Experience19Module,
+    Experience20Module,
     ConfigModule.forRoot({
       envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true
