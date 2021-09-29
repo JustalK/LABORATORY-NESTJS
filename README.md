@@ -9,8 +9,20 @@
 5. **Experience 5**: Creating a validation decorator from a schema
 6. **Experience 6**: Creating a custom guards
 7. **Experience 7**: Creating an interceptor RXJS
+8. **Experience 8**: Save and get an object from the database
+9. **Experience 9**: Getting the environment variable
+10. **Experience 10**: Creating a schema like mongoose
+11. **Experience 11**: Creating a global and local logger
+12. **Experience 12**: Creating and returning a cookie
+13. **Experience 13**: Returning a DTO (serialization)
+14. **Experience 14**: Playing with the cron
+15. **Experience 15**: Sending/Distpaching an event through the application
+16. **Experience 16**: Uploading multiple file in a call using Multer
+17. **Experience 17**: Using the httpService for calling an external API
+18. **Experience 18**: Using session
+19. **Experience 19**: Loading a service dynamically using a Factory
 20. **Experience 20**: Load a module and service in a lazy way
-21. **Experience 21**: Encrypt/Decrypt text with crypt 
+21. **Experience 21**: Encrypt/Decrypt text with crypt
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
